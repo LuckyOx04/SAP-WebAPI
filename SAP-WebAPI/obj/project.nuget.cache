@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5nBf/Z7jtig=",
+  "dgSpecHash": "uaW4RJBTm1A=",
   "success": true,
   "projectFilePath": "/home/ivaylo/projects/cs/SAP-WebAPI/SAP-WebAPI/SAP-WebAPI.csproj",
   "expectedPackageFiles": [
@@ -32,6 +32,8 @@
     "/home/ivaylo/.nuget/packages/microsoft.extensions.primitives/9.0.3/microsoft.extensions.primitives.9.0.3.nupkg.sha512",
     "/home/ivaylo/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512",
     "/home/ivaylo/.nuget/packages/mono.texttemplating/3.0.0/mono.texttemplating.3.0.0.nupkg.sha512",
+    "/home/ivaylo/.nuget/packages/mysqlconnector/2.4.0/mysqlconnector.2.4.0.nupkg.sha512",
+    "/home/ivaylo/.nuget/packages/pomelo.entityframeworkcore.mysql/9.0.0-preview.3.efcore.9.0.0/pomelo.entityframeworkcore.mysql.9.0.0-preview.3.efcore.9.0.0.nupkg.sha512",
     "/home/ivaylo/.nuget/packages/system.codedom/6.0.0/system.codedom.6.0.0.nupkg.sha512",
     "/home/ivaylo/.nuget/packages/system.collections.immutable/7.0.0/system.collections.immutable.7.0.0.nupkg.sha512",
     "/home/ivaylo/.nuget/packages/system.composition/7.0.0/system.composition.7.0.0.nupkg.sha512",
@@ -46,5 +48,16 @@
     "/home/ivaylo/.nuget/packages/system.text.json/9.0.3/system.text.json.9.0.3.nupkg.sha512",
     "/home/ivaylo/.nuget/packages/system.threading.channels/7.0.0/system.threading.channels.7.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "SAP-WebAPI depends on Pomelo.EntityFrameworkCore.MySql (>= 9.0.0-preview.3) but Pomelo.EntityFrameworkCore.MySql 9.0.0-preview.3 was not found. Pomelo.EntityFrameworkCore.MySql 9.0.0-preview.3.efcore.9.0.0 was resolved instead.",
+      "libraryId": "Pomelo.EntityFrameworkCore.MySql",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
 }
