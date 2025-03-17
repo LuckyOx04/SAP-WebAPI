@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ez00YMQgBOo=",
+  "success": true,
+  "projectFilePath": "/home/ivaylo/projects/cs/SAP-WebAPI/SAP-WebAPI/SAP-WebAPI.csproj",
+  "expectedPackageFiles": [
+    "/home/ivaylo/.nuget/packages/microsoft.aspnetcore.openapi/9.0.3/microsoft.aspnetcore.openapi.9.0.3.nupkg.sha512",
+    "/home/ivaylo/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

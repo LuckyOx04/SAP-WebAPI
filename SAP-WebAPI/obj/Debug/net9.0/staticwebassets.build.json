@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "sZrkQzChaFVJoP7Mzf5qcGoSgprOnwWHE4PnMioM6ag=",
+  "Source": "SAP-WebAPI",
+  "BasePath": "_content/SAP-WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
