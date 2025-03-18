@@ -9,9 +9,9 @@ namespace SAP_WebAPI.Models;
 public class User
 {
     public int Id { get; set; }
-    public string Username { get; set; }
-    public string Password { get; set; }
-    public List<Role> Roles { get; set; }
+    public required string Username { get; set; }
+    public required string Password { get; set; }
+    public List<Role>? Roles { get; set; }
 
     //TODO Add setting in db set for many to many recognition
 }

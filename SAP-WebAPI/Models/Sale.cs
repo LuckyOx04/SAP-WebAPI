@@ -1,5 +1,6 @@
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore;
 
 namespace SAP_WebAPI.Models;
 
@@ -7,10 +8,9 @@ namespace SAP_WebAPI.Models;
 public class Sale
 {
     public int Id { get; set; }
-    public int ProductId { get; set; }
-    public Product product { get; set; }
-    public int ProfileId { get; set; }
-    public Profile profile { get; set; }
-    public float Price { get; set; }
+    public required Product product { get; set; }
+    public required Profile profile { get; set; }
+    [Precision(8, 2)]
+    public decimal Price { get; set; }
     public DateOnly SaleDate { get; set; }
 }

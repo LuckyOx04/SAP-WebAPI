@@ -6,9 +6,6 @@ namespace SAP_WebAPI.Contexts;
 
 public class MySQLContext : DbContext
 {
-
-    static readonly string connectionString = "Server=localhost; User ID=root; Password=kzl; Database=sap_website";
-
     public DbSet<Campaign> Campaigns { get; set; }
     public DbSet<Category> Categories { get; set; }
     public DbSet<Product> Products { get; set; }
@@ -17,15 +14,15 @@ public class MySQLContext : DbContext
     public DbSet<Sale> Sales { get; set; }
     public DbSet<User> Users { get; set; }
 
+    public MySQLContext(DbContextOptions<MySQLContext> options)
+        : base(options)
+    {
+    }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<User>()
         .HasMany(e => e.Roles)
         .WithMany();
-    }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
     }
 }

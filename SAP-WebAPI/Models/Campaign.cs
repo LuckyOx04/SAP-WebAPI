@@ -7,7 +7,7 @@ namespace SAP_WebAPI.Models;
 public class Campaign
 {
     public long Id { get; set; }
-    public string Name { get; set; }
+    public string Name { get; set; } = null!;
     public DateOnly StartDate { get; set; }
     public DateOnly EndDate { get; set; }
     public bool IsActive { get; set; }

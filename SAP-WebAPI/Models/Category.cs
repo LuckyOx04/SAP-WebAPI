@@ -7,5 +7,5 @@ namespace SAP_WebAPI.Models;
 public class Category
 {
     public long Id { get; set; }
-    public string Name { get; set; }
+    public required string Name { get; set; }
 }

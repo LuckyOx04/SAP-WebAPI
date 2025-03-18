@@ -90,32 +90,29 @@ namespace SAP_WebAPI.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Brand = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    CategoryId = table.Column<int>(type: "int", nullable: false),
-                    CategoryId1 = table.Column<long>(type: "bigint", nullable: false),
-                    Description = table.Column<string>(type: "longtext", nullable: false)
+                    CategoryId = table.Column<long>(type: "bigint", nullable: false),
+                    Description = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Price = table.Column<float>(type: "float", nullable: false),
                     MinPrice = table.Column<float>(type: "float", nullable: false),
                     Discount = table.Column<int>(type: "int", nullable: false),
                     CampaignDiscount = table.Column<int>(type: "int", nullable: false),
-                    ImageLink = table.Column<string>(type: "longtext", nullable: false)
+                    ImageLink = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Availability = table.Column<int>(type: "int", nullable: false),
-                    CampaignId = table.Column<int>(type: "int", nullable: false),
-                    CampaignId1 = table.Column<long>(type: "bigint", nullable: false)
+                    CampaignId = table.Column<long>(type: "bigint", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_products", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_products_campaigns_CampaignId1",
-                        column: x => x.CampaignId1,
+                        name: "FK_products_campaigns_CampaignId",
+                        column: x => x.CampaignId,
                         principalTable: "campaigns",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_products_categories_CategoryId1",
-                        column: x => x.CategoryId1,
+                        name: "FK_products_categories_CategoryId",
+                        column: x => x.CategoryId,
                         principalTable: "categories",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -130,17 +127,17 @@ namespace SAP_WebAPI.Migrations
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     FirstName = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    LastName = table.Column<string>(type: "longtext", nullable: false)
+                    LastName = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    Ballance = table.Column<float>(type: "float", nullable: false),
-                    UserId = table.Column<int>(type: "int", nullable: false)
+                    Ballance = table.Column<decimal>(type: "decimal(14,2)", precision: 14, scale: 2, nullable: false),
+                    userId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_profiles", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_profiles_users_UserId",
-                        column: x => x.UserId,
+                        name: "FK_profiles_users_userId",
+                        column: x => x.userId,
                         principalTable: "users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -178,10 +175,9 @@ namespace SAP_WebAPI.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    ProductId = table.Column<int>(type: "int", nullable: false),
                     productId = table.Column<long>(type: "bigint", nullable: false),
-                    ProfileId = table.Column<int>(type: "int", nullable: false),
-                    Price = table.Column<float>(type: "float", nullable: false),
+                    profileId = table.Column<int>(type: "int", nullable: false),
+                    Price = table.Column<decimal>(type: "decimal(8,2)", precision: 8, scale: 2, nullable: false),
                     SaleDate = table.Column<DateOnly>(type: "date", nullable: false)
                 },
                 constraints: table =>
@@ -194,8 +190,8 @@ namespace SAP_WebAPI.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_sales_profiles_ProfileId",
-                        column: x => x.ProfileId,
+                        name: "FK_sales_profiles_profileId",
+                        column: x => x.profileId,
                         principalTable: "profiles",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -203,19 +199,19 @@ namespace SAP_WebAPI.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateIndex(
-                name: "IX_products_CampaignId1",
+                name: "IX_products_CampaignId",
                 table: "products",
-                column: "CampaignId1");
+                column: "CampaignId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_products_CategoryId1",
+                name: "IX_products_CategoryId",
                 table: "products",
-                column: "CategoryId1");
+                column: "CategoryId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_profiles_UserId",
+                name: "IX_profiles_userId",
                 table: "profiles",
-                column: "UserId");
+                column: "userId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_roles_Name",
@@ -234,9 +230,9 @@ namespace SAP_WebAPI.Migrations
                 column: "productId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_sales_ProfileId",
+                name: "IX_sales_profileId",
                 table: "sales",
-                column: "ProfileId");
+                column: "profileId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_users_Username",

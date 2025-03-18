@@ -12,7 +12,7 @@ using SAP_WebAPI.Contexts;
 namespace SAP_WebAPI.Migrations
 {
     [DbContext(typeof(MySQLContext))]
-    [Migration("20250317220130_InitialCreate")]
+    [Migration("20250318223243_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -101,27 +101,19 @@ namespace SAP_WebAPI.Migrations
                     b.Property<int>("CampaignDiscount")
                         .HasColumnType("int");
 
-                    b.Property<int>("CampaignId")
-                        .HasColumnType("int");
-
-                    b.Property<long>("CampaignId1")
+                    b.Property<long?>("CampaignId")
                         .HasColumnType("bigint");
 
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("int");
-
-                    b.Property<long>("CategoryId1")
+                    b.Property<long>("CategoryId")
                         .HasColumnType("bigint");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<int>("Discount")
                         .HasColumnType("int");
 
                     b.Property<string>("ImageLink")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<float>("MinPrice")
@@ -136,9 +128,9 @@ namespace SAP_WebAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CampaignId1");
+                    b.HasIndex("CampaignId");
 
-                    b.HasIndex("CategoryId1");
+                    b.HasIndex("CategoryId");
 
                     b.ToTable("products");
                 });
@@ -151,23 +143,23 @@ namespace SAP_WebAPI.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<float>("Ballance")
-                        .HasColumnType("float");
+                    b.Property<decimal>("Ballance")
+                        .HasPrecision(14, 2)
+                        .HasColumnType("decimal(14,2)");
 
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("LastName")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<int>("UserId")
+                    b.Property<int>("userId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("userId");
 
                     b.ToTable("profiles");
                 });
@@ -200,14 +192,9 @@ namespace SAP_WebAPI.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<float>("Price")
-                        .HasColumnType("float");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProfileId")
-                        .HasColumnType("int");
+                    b.Property<decimal>("Price")
+                        .HasPrecision(8, 2)
+                        .HasColumnType("decimal(8,2)");
 
                     b.Property<DateOnly>("SaleDate")
                         .HasColumnType("date");
@@ -215,11 +202,14 @@ namespace SAP_WebAPI.Migrations
                     b.Property<long>("productId")
                         .HasColumnType("bigint");
 
+                    b.Property<int>("profileId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("ProfileId");
-
                     b.HasIndex("productId");
+
+                    b.HasIndex("profileId");
 
                     b.ToTable("sales");
                 });
@@ -267,13 +257,11 @@ namespace SAP_WebAPI.Migrations
                 {
                     b.HasOne("SAP_WebAPI.Models.Campaign", "Campaign")
                         .WithMany()
-                        .HasForeignKey("CampaignId1")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("CampaignId");
 
                     b.HasOne("SAP_WebAPI.Models.Category", "Category")
                         .WithMany()
-                        .HasForeignKey("CategoryId1")
+                        .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -286,7 +274,7 @@ namespace SAP_WebAPI.Migrations
                 {
                     b.HasOne("SAP_WebAPI.Models.User", "user")
                         .WithMany()
-                        .HasForeignKey("UserId")
+                        .HasForeignKey("userId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -295,15 +283,15 @@ namespace SAP_WebAPI.Migrations
 
             modelBuilder.Entity("SAP_WebAPI.Models.Sale", b =>
                 {
-                    b.HasOne("SAP_WebAPI.Models.Profile", "profile")
-                        .WithMany()
-                        .HasForeignKey("ProfileId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("SAP_WebAPI.Models.Product", "product")
                         .WithMany()
                         .HasForeignKey("productId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("SAP_WebAPI.Models.Profile", "profile")
+                        .WithMany()
+                        .HasForeignKey("profileId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

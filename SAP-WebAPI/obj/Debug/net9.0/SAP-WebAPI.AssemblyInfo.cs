@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("b80c72fe-9166-4b8e-b539-6a954a1b35d9")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("SAP-WebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7298861705a08167542370cdd774691bfbc91be9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b81fe0fb99bfa25b5012e0fb01ed6746fbb170d")]
 [assembly: System.Reflection.AssemblyProductAttribute("SAP-WebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SAP-WebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
