@@ -943,6 +943,16 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
+      },
+      "SAP-ClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/SAP-ClassLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SAP-ClassLibrary.dll": {}
+        }
       }
     }
   },
@@ -2848,13 +2858,19 @@
         "system.threading.channels.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "SAP-ClassLibrary/1.0.0": {
+      "type": "project",
+      "path": "../SAP-ClassLibrary/SAP-ClassLibrary.csproj",
+      "msbuildProject": "../SAP-ClassLibrary/SAP-ClassLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
       "Microsoft.AspNetCore.OpenApi >= 9.0.3",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.3",
-      "Pomelo.EntityFrameworkCore.MySql >= 9.0.0-preview.3"
+      "Pomelo.EntityFrameworkCore.MySql >= 9.0.0-preview.3",
+      "SAP-ClassLibrary >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2882,7 +2898,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/ivaylo/projects/cs/SAP-WebAPI/SAP-ClassLibrary/SAP-ClassLibrary.csproj": {
+              "projectPath": "/home/ivaylo/projects/cs/SAP-WebAPI/SAP-ClassLibrary/SAP-ClassLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

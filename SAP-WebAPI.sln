@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAP-WebAPI", "SAP-WebAPI\SAP-WebAPI.csproj", "{EDA69EE0-8B63-4CC2-882A-EEA0DC57C4FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAP-ClassLibrary", "SAP-ClassLibrary\SAP-ClassLibrary.csproj", "{EE600E33-CFA3-4309-9A64-6B502406380A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,18 @@ Global
 		{EDA69EE0-8B63-4CC2-882A-EEA0DC57C4FF}.Release|x64.Build.0 = Release|Any CPU
 		{EDA69EE0-8B63-4CC2-882A-EEA0DC57C4FF}.Release|x86.ActiveCfg = Release|Any CPU
 		{EDA69EE0-8B63-4CC2-882A-EEA0DC57C4FF}.Release|x86.Build.0 = Release|Any CPU
+		{EE600E33-CFA3-4309-9A64-6B502406380A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE600E33-CFA3-4309-9A64-6B502406380A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE600E33-CFA3-4309-9A64-6B502406380A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EE600E33-CFA3-4309-9A64-6B502406380A}.Debug|x64.Build.0 = Debug|Any CPU
+		{EE600E33-CFA3-4309-9A64-6B502406380A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EE600E33-CFA3-4309-9A64-6B502406380A}.Debug|x86.Build.0 = Debug|Any CPU
+		{EE600E33-CFA3-4309-9A64-6B502406380A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE600E33-CFA3-4309-9A64-6B502406380A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE600E33-CFA3-4309-9A64-6B502406380A}.Release|x64.ActiveCfg = Release|Any CPU
+		{EE600E33-CFA3-4309-9A64-6B502406380A}.Release|x64.Build.0 = Release|Any CPU
+		{EE600E33-CFA3-4309-9A64-6B502406380A}.Release|x86.ActiveCfg = Release|Any CPU
+		{EE600E33-CFA3-4309-9A64-6B502406380A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
