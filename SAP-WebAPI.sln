@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAP-WebAPI", "SAP-WebAPI\SA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAP-ClassLibrary", "SAP-ClassLibrary\SAP-ClassLibrary.csproj", "{EE600E33-CFA3-4309-9A64-6B502406380A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sap-WebAPI-Tests", "Sap-WebAPI-Tests\Sap-WebAPI-Tests.csproj", "{39E33B29-346B-4C5D-B3B5-F776E417B628}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,18 @@ Global
 		{EE600E33-CFA3-4309-9A64-6B502406380A}.Release|x64.Build.0 = Release|Any CPU
 		{EE600E33-CFA3-4309-9A64-6B502406380A}.Release|x86.ActiveCfg = Release|Any CPU
 		{EE600E33-CFA3-4309-9A64-6B502406380A}.Release|x86.Build.0 = Release|Any CPU
+		{39E33B29-346B-4C5D-B3B5-F776E417B628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39E33B29-346B-4C5D-B3B5-F776E417B628}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39E33B29-346B-4C5D-B3B5-F776E417B628}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{39E33B29-346B-4C5D-B3B5-F776E417B628}.Debug|x64.Build.0 = Debug|Any CPU
+		{39E33B29-346B-4C5D-B3B5-F776E417B628}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{39E33B29-346B-4C5D-B3B5-F776E417B628}.Debug|x86.Build.0 = Debug|Any CPU
+		{39E33B29-346B-4C5D-B3B5-F776E417B628}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39E33B29-346B-4C5D-B3B5-F776E417B628}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39E33B29-346B-4C5D-B3B5-F776E417B628}.Release|x64.ActiveCfg = Release|Any CPU
+		{39E33B29-346B-4C5D-B3B5-F776E417B628}.Release|x64.Build.0 = Release|Any CPU
+		{39E33B29-346B-4C5D-B3B5-F776E417B628}.Release|x86.ActiveCfg = Release|Any CPU
+		{39E33B29-346B-4C5D-B3B5-F776E417B628}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
