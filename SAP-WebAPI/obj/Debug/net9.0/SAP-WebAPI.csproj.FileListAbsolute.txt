@@ -129,3 +129,8 @@
 /home/ivaylo/projects/cs/SAP-WebAPI/SAP-WebAPI/obj/Debug/net9.0/SAP-WebAPI.sourcelink.json
 /home/ivaylo/projects/cs/SAP-WebAPI/SAP-WebAPI/bin/Debug/net9.0/MySqlConnector.dll
 /home/ivaylo/projects/cs/SAP-WebAPI/SAP-WebAPI/bin/Debug/net9.0/Pomelo.EntityFrameworkCore.MySql.dll
+/home/ivaylo/projects/cs/SAP-WebAPI/SAP-WebAPI/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
+/home/ivaylo/projects/cs/SAP-WebAPI/SAP-WebAPI/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/ivaylo/projects/cs/SAP-WebAPI/SAP-WebAPI/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/home/ivaylo/projects/cs/SAP-WebAPI/SAP-WebAPI/bin/Debug/net9.0/SAP-ClassLibrary.dll
+/home/ivaylo/projects/cs/SAP-WebAPI/SAP-WebAPI/bin/Debug/net9.0/SAP-ClassLibrary.pdb

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SAP-ClassLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+111f5309fd15dec3757c59ae0b5b6aace2e583fb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f4357a4f60a57dd4efa084596f9f25503e38c9a2")]
 [assembly: System.Reflection.AssemblyProductAttribute("SAP-ClassLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SAP-ClassLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

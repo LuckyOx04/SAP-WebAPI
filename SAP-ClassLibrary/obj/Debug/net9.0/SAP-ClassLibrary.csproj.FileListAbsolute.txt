@@ -1,0 +1,12 @@
+/home/ivaylo/projects/cs/SAP-WebAPI/SAP-ClassLibrary/bin/Debug/net9.0/SAP-ClassLibrary.deps.json
+/home/ivaylo/projects/cs/SAP-WebAPI/SAP-ClassLibrary/bin/Debug/net9.0/SAP-ClassLibrary.dll
+/home/ivaylo/projects/cs/SAP-WebAPI/SAP-ClassLibrary/bin/Debug/net9.0/SAP-ClassLibrary.pdb
+/home/ivaylo/projects/cs/SAP-WebAPI/SAP-ClassLibrary/obj/Debug/net9.0/SAP-ClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/home/ivaylo/projects/cs/SAP-WebAPI/SAP-ClassLibrary/obj/Debug/net9.0/SAP-ClassLibrary.AssemblyInfoInputs.cache
+/home/ivaylo/projects/cs/SAP-WebAPI/SAP-ClassLibrary/obj/Debug/net9.0/SAP-ClassLibrary.AssemblyInfo.cs
+/home/ivaylo/projects/cs/SAP-WebAPI/SAP-ClassLibrary/obj/Debug/net9.0/SAP-ClassLibrary.csproj.CoreCompileInputs.cache
+/home/ivaylo/projects/cs/SAP-WebAPI/SAP-ClassLibrary/obj/Debug/net9.0/SAP-ClassLibrary.sourcelink.json
+/home/ivaylo/projects/cs/SAP-WebAPI/SAP-ClassLibrary/obj/Debug/net9.0/SAP-ClassLibrary.dll
+/home/ivaylo/projects/cs/SAP-WebAPI/SAP-ClassLibrary/obj/Debug/net9.0/refint/SAP-ClassLibrary.dll
+/home/ivaylo/projects/cs/SAP-WebAPI/SAP-ClassLibrary/obj/Debug/net9.0/SAP-ClassLibrary.pdb
+/home/ivaylo/projects/cs/SAP-WebAPI/SAP-ClassLibrary/obj/Debug/net9.0/ref/SAP-ClassLibrary.dll
