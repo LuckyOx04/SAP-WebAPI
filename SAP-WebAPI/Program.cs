@@ -1,8 +1,17 @@
+using Microsoft.EntityFrameworkCore;
+using SAP_WebAPI.Contexts;
+
 var builder = WebApplication.CreateBuilder(args);
+
+var connectionString = builder.Configuration["ConnectionStrings:sap_website"]
+    ?? throw new InvalidOperationException("Connection string not found!");
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+builder.Services.AddDbContext<MySQLContext>(options =>
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
 var app = builder.Build();
 
