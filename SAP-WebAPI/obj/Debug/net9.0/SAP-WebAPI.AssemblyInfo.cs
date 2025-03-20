@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SAP-WebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7cfb95af9c12a2205cb4a56df7d28fe25f2f9a26")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba4449ef28ef9f3c056b1af1ddf1562ffa583873")]
 [assembly: System.Reflection.AssemblyProductAttribute("SAP-WebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SAP-WebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
